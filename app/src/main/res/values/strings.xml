@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Clover</string>
+    <string name="subscription_key">afd26e16bccf4548a9438afa8e18e568</string>
+    <string name="subscription_apiroot">https://westeurope.api.cognitive.microsoft.com/vision/v1.0</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#263238"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#009688"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16pt"
+        android:padding="5dp"
+        android:onClick="AIREVEAL"
+        android:textStyle="bold"
+        android:text="Clover AI"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="12pt"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/ic_remove_red_eye_black_24dp"
+            android:scaleType="fitCenter"
+            android:textColor="#ffffff"
+            android:onClick="blind"
+            android:background="#009688"
+            android:textStyle="bold"
+           android:text="Visually impaired"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="12pt"
+            android:padding="10dp"
+            android:src="@drawable/ic_hearing_black_24dp"
+            android:scaleType="fitCenter"
+            android:onClick="deaf"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:background="#00B1A1"
+            android:textStyle="bold"
+            android:text="Hearing Impaired"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mute"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="12pt"
+            android:src="@drawable/ic_mic_black_24dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:background="#00CEBC"
+            android:textStyle="bold"
+            android:text="Speech Impaired"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="10pt"
+            android:paddingTop="14dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_vibration_black_24dp"
+            android:scaleType="fitCenter"
+            android:onClick="deafblind"
+            android:paddingRight="10dp"
+            android:paddingBottom="14dp"
+            android:textColor="#ffffff"
+            android:background="#00E7D3"
+            android:textStyle="bold"
+            android:text="Visual-Hearing Impaired"/>
+    </LinearLayout>
+</LinearLayout>

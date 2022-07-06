@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:background="#263238"
+    android:layout_height="wrap_content"
+    android:id="@+id/tact_toolbar"></android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:text="Visual Input"
+            android:background="#009688"
+            android:id="@+id/visualinput"
+            android:onClick="visualInput"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_remove_red_eye_black_24dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Audio Input"
+            android:scaleType="fitCenter"
+            android:id="@+id/audioinput"
+            android:background="#009688"
+            android:src="@drawable/ic_mic_black_24dp"
+            android:onClick="audioInput"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tact_progress"
+            android:layout_gravity="center_vertical"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="50"
+    android:background="#263238">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recognized Text"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginLeft="10dp"
+        android:textColor="#26A69A"
+        android:textSize="27sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="42"
+        android:id="@+id/recogtextbox"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#1DE9B6"
+        android:hint="Recognized text will appear here..."
+        android:gravity="top"
+        android:background="#37474F"/>
+
+    <com.newgen.clover.VisualizerView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/visualizerview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#212121"
+        android:layout_marginTop="5dp"
+        android:layout_weight="5"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="recognize"
+            android:onClick="dfw"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:paddingLeft="10dp"
+            android:id="@+id/audiovisualizer"
+            android:paddingRight="10dp"
+            android:background="#26A69A"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/ic_waveform"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="right"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="recognize"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:src="@drawable/ic_mic_black_24dp"
+            android:onClick="recogtext"
+            android:paddingLeft="10dp"
+            android:id="@+id/audiorecog"
+            android:layout_marginLeft="3dp"
+            android:paddingRight="10dp"
+            android:background="#26A69A"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+</LinearLayout>

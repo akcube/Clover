@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "578889389801",
+    "firebase_url": "https://newnotifhandler.firebaseio.com",
+    "project_id": "newnotifhandler",
+    "storage_bucket": "newnotifhandler.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578889389801:android:54570f2736bfabb7",
+        "android_client_info": {
+          "package_name": "com.newgen.clover"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnpNwRF1t-qwY9oEtnJcu8IuXBGSNsVOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578889389801-eq95gdq8bk6l0smv6211h3tvh9rnqhpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
